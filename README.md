@@ -16,4 +16,5 @@
 ######    4、推文添加
 ######    5、最近用户统计
 #### 具体实现功能请看截图/部分截图
+![image](https://github.com/laughter-dayu/jkapp/blob/master/pic/WechatIMG1.jpg)
 
