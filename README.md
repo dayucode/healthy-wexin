@@ -16,32 +16,18 @@
 ######    4、推文添加
 ######    5、最近用户统计
 #### 具体实现功能请看截图/部分截图
-![image](https://github.com/dayucode/healthy/blob/master/healthy/pic/1.png)
-
-![image](https://github.com/dayucode/healthy/blob/master/healthy/pic/2.png)
-
-![image](https://github.com/dayucode/healthy/blob/master/healthy/pic/3.png)
-
-![image](https://github.com/dayucode/healthy/blob/master/healthy/pic/4.png)
-
+![image](https://github.com/dayucode/healthy/blob/master/healthy/pic/1.png)|
+![image](https://github.com/dayucode/healthy/blob/master/healthy/pic/2.png)|
+![image](https://github.com/dayucode/healthy/blob/master/healthy/pic/3.png)|
+![image](https://github.com/dayucode/healthy/blob/master/healthy/pic/4.png)|
 ![image](https://github.com/dayucode/healthy/blob/master/healthy/pic/5.png)
-
 ![image](https://github.com/dayucode/healthy/blob/master/healthy/pic/6.png)
-
 ![image](https://github.com/dayucode/healthy/blob/master/healthy/pic/7.png)
-
 ![image](https://github.com/dayucode/healthy/blob/master/healthy/pic/8.png)
-
 ![image](https://github.com/dayucode/healthy/blob/master/healthy/pic/9.png)
-
 ![image](https://github.com/dayucode/healthy/blob/master/healthy/pic/10.png)
-
 ![image](https://github.com/dayucode/healthy/blob/master/healthy/pic/11.png)
-
 ![image](https://github.com/dayucode/healthy/blob/master/healthy/pic/12.png)
-
 ![image](https://github.com/dayucode/healthy/blob/master/healthy/pic/13.png)
-
 ![image](https://github.com/dayucode/healthy/blob/master/healthy/pic/14.png)
-
 ![image](https://github.com/dayucode/healthy/blob/master/healthy/pic/15.png)
