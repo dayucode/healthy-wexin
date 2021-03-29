@@ -16,9 +16,9 @@
 ######    4、推文添加
 ######    5、最近用户统计
 #### 具体实现功能请看截图/部分截图
-|![image](https://github.com/dayucode/healthy/blob/master/healthy/pic/1.png)
-|![image](https://github.com/dayucode/healthy/blob/master/healthy/pic/2.png)
-|![image](https://github.com/dayucode/healthy/blob/master/healthy/pic/3.png)
+![image](https://github.com/dayucode/healthy/blob/master/healthy/pic/1.png)
+![image](https://github.com/dayucode/healthy/blob/master/healthy/pic/2.png)
+![image](https://github.com/dayucode/healthy/blob/master/healthy/pic/3.png)
 ![image](https://github.com/dayucode/healthy/blob/master/healthy/pic/4.png)
 ![image](https://github.com/dayucode/healthy/blob/master/healthy/pic/5.png)
 ![image](https://github.com/dayucode/healthy/blob/master/healthy/pic/6.png)
@@ -31,3 +31,8 @@
 ![image](https://github.com/dayucode/healthy/blob/master/healthy/pic/13.png)
 ![image](https://github.com/dayucode/healthy/blob/master/healthy/pic/14.png)
 ![image](https://github.com/dayucode/healthy/blob/master/healthy/pic/15.png)
+#### 如有任何问题请咨询
+#### 微信：
+![image](https://github.com/laughter-dayu/jkapp/blob/master/pic/wexin.jpg)
+#### 或邮箱
+#### dayucode@foxmail.com
