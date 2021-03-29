@@ -1,5 +1,5 @@
 #### 健康/老人健康/健康管理/老人健康管理系统 
-#### 版本：微信公众号、App (两版本)（服务器端最近几天就会上传）
+#### 版本：微信公众号、App (两版本)（服务器端最近几天就会上传，忙的懒得传）
 #### 后端：IntelliJIDEA + mysql + redis(公众号时借助Ngrpk内网穿透工具可本地调试)
 #### 前端：IntelliJIDEA + webstorm/hubilder/VScode(都可)
 #### 框架 springBoot + mybatisplus + vue
