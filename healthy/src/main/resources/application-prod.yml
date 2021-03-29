@@ -1,0 +1,45 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver # 数据库驱动
+    username: test # 数据库用户名
+    password: 123456 # 数据库密码
+    url: jdbc:mysql://10.200.116.217:3306/healthy?characterEncoding=utf8&allowMultiQueries=true&serverTimezone=GMT%2B8 # 数据库链接
+  jackson:
+    default-property-inclusion: non_null # JSON输出不能空
+  redis:
+    host: 10.200.116.217 # Redis域名
+    port: 6379 # Redis端口
+    password: 123456 # Redis密码
+  servlet:
+    multipart:
+      max-file-size: 5MB # 单个文件最大大小
+      max-request-size: 50MB # 请求的总最大大小
+  resources:
+    static-locations: file:img/,classpath:/static/ # 静态资源路径
+  freemarker:
+    suffix: .html # freemarker后缀名
+server:
+  port: 8888 # tomcat服务器端口
+#  servlet:
+#    context-path: /healthy # 项目环境上下文变量
+logging:
+  level:
+    com.cdutcm.healthy.dataobject.mapper: debug # 显示SQL语句
+    com.baomidou.mybatisplus.extension.service: debug # 显示SQL语句
+    io.swagger.models.parameters.AbstractSerializableParameter: error # Swagger2
+healthy:
+  wechat:
+    mpAppId: wxe6a4566e548b4772 # 微信Appid
+    mpAppSecret: 9c75c3368067822fa8fe76c28875aff3 # 微信Secret
+    token: tyk # 微信token
+    templateId:
+      bodyIndex: ypk0uhX5ZrWoTnK3XBPWfHx1LSE1vIZFU-2KusIjBz0 #微信模板消息ID
+  url:
+    wechatMpAuthorize: http://tyk.nat300.top # 微信授权地址
+    returnUrl: http://10.200.116.217:5000/#/ # 登录跳转首页
+    perfectUrl: http://10.200.116.217:5000/#/personalCenter/bodyInfo?login=true # 完善用户信息页面地址
+    adminLogin: http://10.200.116.217:5000/#/management # 管理员登录地址
+    healthy: http://10.200.116.217:8888 # 项目地址 http://tyk.nat300.top
+    domain: 10.200.116.217
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml

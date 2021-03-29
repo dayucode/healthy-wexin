@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>wangEditor测试</title>
+</head>
+<body>
+<div id="wange"></div>
+</body>
+<script src="js/wangEditor.min.js"></script>
+<script>
+    var E = window.wangEditor;
+    var editor = new E('#wange');
+
+    // 下面两个配置，使用其中一个即可显示“上传图片”的tab。但是两者不要同时使用！！！
+    // editor.customConfig.uploadImgShowBase64 = true   // 使用 base64 保存图片
+    editor.customConfig.uploadImgServer = '/admin/tweets/upload';  // 上传图片到服务器
+    // 上传图片时，可自定义filename，即在使用formdata.append(name, file)添加图片文件时，自定义第一个参数。
+    editor.customConfig.uploadFileName = "file";
+
+    // 跨域上传中如果需要传递 cookie 需设置 withCredentials
+    editor.customConfig.withCredentials = true;
+
+    // 将图片大小限制为 3M
+    editor.customConfig.uploadImgMaxSize = 3 * 1024 * 1024;
+    // 限制一次最多上传 5 张图片
+    editor.customConfig.uploadImgMaxLength = 5;
+    editor.create()
+</script>
+</html>

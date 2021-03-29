@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>扫码登录</title>
+</head>
+<script src="//cdn.bootcss.com/angular.js/1.5.6/angular.min.js"></script>
+<script type="text/javascript">
+    /*<![CDATA[*/
+    var app = angular.module('app', []);
+    app.controller('MainController', function ($rootScope, $scope, $http) {
+        //二维码图片src
+        $scope.src = null;
+        //获取二维码
+        $scope.getQrCode = function () {
+            $http.get('/scan/login/getQrCode').success(function (data) {
+                if (!data || !data.token || !data.image)
+                    return;
+                $scope.src = 'data:image/png;base64,' + data.image;
+                console.log(data.token);
+                $scope.getResponse(data.token)
+            });
+        };
+        //获取登录响应
+        $scope.getResponse = function (token) {
+            $http.get('/scan/login/getResponse/' + token).success(function (data) {
+                //一秒后，重新获取登录二维码
+                if (!data || !data.success) {
+
+                    setTimeout($scope.getQrCode(), 1000);
+                    return;
+                }
+                //登录成功，保存token信息，进去首页
+                // todo 保存token信息,进入首页
+                location.href = 'http://baidu.com'
+            }).error(function (data, status) {
+                console.log(data);
+                console.log(status);
+                //一秒后，重新获取登录二维码
+                setTimeout($scope.getQrCode(), 1000);
+            })
+        };
+        $scope.getQrCode();
+    });
+    /*]]>*/
+</script>
+<body ng-app="app" ng-controller="MainController">
+<h1>扫码登录</h1>
+<img ng-show="src" ng-src="{{src}}"/>
+</body>
+</html>

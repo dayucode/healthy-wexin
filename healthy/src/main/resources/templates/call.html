@@ -1,0 +1,13 @@
+<script>
+    window.onload = function callPhone() {
+        window.location.href = "tel:" + GetPhone();
+    };
+
+    /*
+    http://tuyuankun.320.io/call?phone=18382471393&sessionid=1555390446&scene=0&clicktime=1555390872
+     */
+    function GetPhone() {
+        var url = document.location.toString();
+        return url.substr(url.indexOf("phone=") + 6, 11);
+    }
+</script>

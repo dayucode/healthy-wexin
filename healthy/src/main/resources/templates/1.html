@@ -1,0 +1,30 @@
+<!--
+  @Author : TYK 涂元坤
+  @Mail : 766564616@qq.com
+  @Create : 2019/5/21 2:26 星期二
+  @Description :
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+
+</body>
+<script>
+    document.cookie = "token=5ca7cd19-d8f9-4cf5-aa6a-fb9d8e7bbdcf";
+    $.ajax({
+        type: "get",//请求类型
+        url: "http://tuyuankun.320.io/user/pressure/newly",
+        xhrFields: {
+            withCredentials: true//发送ajax请求时加cookie
+        },
+        success: function (json) {
+            console.log(json);
+        }
+    });
+</script>
+</html>
