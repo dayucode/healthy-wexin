@@ -9,8 +9,8 @@ import lombok.Data;
 import java.util.Map;
 
 /**
- * @Author :  涂元坤
- * @Mail : 766564616@qq.com
+ * @Author :  daYu
+ * @Mail : dayucode@foxmail.com
  * @Create : 2019/2/23 22:02 星期六
  * @Description :
  * 体重-历史记录-变化趋势/近三个月统计

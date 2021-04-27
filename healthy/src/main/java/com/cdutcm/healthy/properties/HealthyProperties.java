@@ -4,8 +4,8 @@ import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 /**
- * @Author :  涂元坤
- * @Mail : 766564616@qq.com
+ * @Author :  daYu
+ * @Mail : dayucode@foxmail.com
  * @Create : 2019/2/24 16:58 星期日
  * @Description :
  */

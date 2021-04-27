@@ -1,8 +1,8 @@
 package com.cdutcm.healthy.constant;
 
 /**
- * @Author :  涂元坤
- * @Mail : 766564616@qq.com
+ * @Author :  daYu
+ * @Mail : dayucode@foxmail.com
  * @Create : 2019/3/15 16:50 星期五
  * @Description :
  */

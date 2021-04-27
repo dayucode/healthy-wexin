@@ -15,8 +15,8 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.servlet.ModelAndView;
 
 /**
- * @Author :  涂元坤
- * @Mail : 766564616@qq.com
+ * @Author :  daYu
+ * @Mail : dayucode@foxmail.com
  * @Create : 2019/2/23 16:57 星期六
  * @Description :
  * HealthyExceptionHandler

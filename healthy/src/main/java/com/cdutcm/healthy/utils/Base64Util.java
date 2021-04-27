@@ -8,8 +8,8 @@ import java.util.Arrays;
 import java.util.Base64;
 
 /**
- * @Author :  涂元坤
- * @Mail : 766564616@qq.com
+ * @Author :  daYu
+ * @Mail : dayucode@foxmail.com
  * @Create : 2019/4/21 14:52 星期日
  * @Description :
  */

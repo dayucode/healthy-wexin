@@ -1,8 +1,11 @@
 package com.cdutcm.healthy.controller.user;
 
 import com.cdutcm.healthy.HealthyApplicationTests;
+import com.cdutcm.healthy.constant.RedisConstant;
+import com.cdutcm.healthy.service.RedisOperator;
 import com.cdutcm.healthy.utils.GsonUtil;
 import org.junit.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
@@ -40,5 +43,16 @@ public class UserControllerTest extends HealthyApplicationTests {
 
     @Test
     public void bind() {
+    }
+
+    @Autowired
+    private RedisOperator redisOperator;
+
+    @Test
+    public void verifyToken(){
+        String token = "b780b8cb-8cc2-4c03-a885-43d195fa7423";
+        String tokenValue = redisOperator.get(String.format(RedisConstant.TOKEN_USER, token));
+        System.out.println("===============================================");
+        System.out.println(tokenValue);
     }
 }

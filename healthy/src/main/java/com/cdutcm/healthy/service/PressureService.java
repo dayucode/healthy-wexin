@@ -7,8 +7,8 @@ import com.cdutcm.healthy.dataobject.vo.user.PressureCensusVO;
 import com.cdutcm.healthy.dataobject.vo.user.PressureVO;
 
 /**
- * @Author :  涂元坤
- * @Mail : 766564616@qq.com
+ * @Author :  daYu
+ * @Mail : dayucode@foxmail.com
  * @Create : 2019/2/21 21:17 星期四
  * @Description :
  */

@@ -3,8 +3,8 @@ package com.cdutcm.healthy.properties;
 import lombok.Data;
 
 /**
- * @Author :  涂元坤
- * @Mail : 766564616@qq.com
+ * @Author :  daYu
+ * @Mail : dayucode@foxmail.com
  * @Create : 2019/2/25 18:47 星期一
  * @Description :
  */

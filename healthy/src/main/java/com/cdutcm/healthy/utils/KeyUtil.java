@@ -5,8 +5,8 @@ import java.util.Calendar;
 import java.util.Random;
 
 /**
- * @Author :  涂元坤
- * @Mail : 766564616@qq.com
+ * @Author :  daYu
+ * @Mail : dayucode@foxmail.com
  * @Create : 2019/2/21 21:31 星期四
  * @Description :
  * 生成唯一的主键

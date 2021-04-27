@@ -21,12 +21,12 @@ public class AdminControllerTest extends HealthyApplicationTests {
                 post("/admin/add")
                         .contentType(APPLICATION_JSON_UTF8)
                         .content("{\n" +
-                                "  \"adminName\": \"蒋同学\",\n" +
-                                "  \"adminPhone\": \"18428305872\",\n" +
+                                "  \"adminName\": \"daYu\",\n" +
+                                "  \"adminPhone\": \"15109674440\",\n" +
                                 "  \"adminSex\": \"男\",\n" +
-                                "  \"username\": \"okok\"\n" +
+                                "  \"username\": \"dayucode\"\n" +
                                 "}")
-                        .cookie(new Cookie("token", "266417b3-10f4-4385-a2b4-5c89115ac0e5")))
+                        .cookie(new Cookie("token", "9d67797a-fb52-4371-a384-3c0a4fb61a5h")))
                 .andExpect(status().isOk())
                 .andDo(MockMvcResultHandlers.print())
                 .andReturn().getResponse().getContentAsString();

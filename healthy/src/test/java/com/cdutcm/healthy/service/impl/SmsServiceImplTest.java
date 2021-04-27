@@ -16,7 +16,7 @@ public class SmsServiceImplTest extends HealthyApplicationTests {
     private SmsService smsService;
 
     private String to = "18382471393";
-    private String name = "涂元坤";
+    private String name = "daYu";
     private String type = "高血压正常";
 
 

@@ -1,8 +1,8 @@
 package com.cdutcm.healthy.constant;
 
 /**
- * @Author :  涂元坤
- * @Mail : 766564616@qq.com
+ * @Author :  daYu
+ * @Mail : dayucode@foxmail.com
  * @Create : 2019/4/9 9:50 星期二
  * @Description :
  * 用户输入的消息是哪一种类别微信
@@ -16,4 +16,7 @@ public interface WxMapMsgCategory {
     String GET_KEY = "key";
 
     String HELP = "帮助";
+    String HELPClick = "help";
+    String ADMIN_LOGIN = "admin_login";
+
 }

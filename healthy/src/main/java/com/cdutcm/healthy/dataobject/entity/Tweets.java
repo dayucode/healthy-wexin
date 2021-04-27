@@ -7,8 +7,8 @@ import lombok.Data;
 import java.util.Date;
 
 /**
- * @Author :  涂元坤
- * @Mail : 766564616@qq.com
+ * @Author :  daYu
+ * @Mail : dayucode@foxmail.com
  * @Create : 2019/2/21 16:46 星期四
  * @Description :
  * 推文表

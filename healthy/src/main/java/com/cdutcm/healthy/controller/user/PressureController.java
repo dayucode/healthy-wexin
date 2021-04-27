@@ -22,8 +22,8 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 
 /**
- * @Author :  涂元坤
- * @Mail : 766564616@qq.com
+ * @Author :  daYu
+ * @Mail : dayucode@foxmail.com
  * @Create : 2019/2/21 20:37 星期四
  * @Description :
  */
@@ -61,7 +61,12 @@ public class PressureController {
     @ApiOperation("【最近血压】最近一次测量的血压信息")
     @GetMapping("/newly")
     public ResultVO newly(@ApiParam("登录凭证token") @CookieValue("token") String token) {
+        System.out.println("===========================");
+        System.out.println(token);
+        String format = String.format(RedisConstant.TOKEN_USER, token);
         String openid = redisOperator.get(String.format(RedisConstant.TOKEN_USER, token));
+        System.out.println("===========================");
+        System.out.println(format);
         return ResultVOUtil.success(pressureService.newlyPressure(openid));
     }
 

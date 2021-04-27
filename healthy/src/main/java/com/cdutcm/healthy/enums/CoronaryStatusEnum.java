@@ -3,8 +3,8 @@ package com.cdutcm.healthy.enums;
 import lombok.Getter;
 
 /**
- * @Author :  涂元坤
- * @Mail : 766564616@qq.com
+ * @Author :  daYu
+ * @Mail : dayucode@foxmail.com
  * @Create : 2019/2/26 15:46 星期二
  * @Description :
  */

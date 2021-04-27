@@ -7,8 +7,8 @@ import org.apache.ibatis.annotations.Update;
 import org.springframework.stereotype.Component;
 
 /**
- * @Author : 涂元坤
- * @Mail : 766564616@qq.com
+ * @Author : daYu
+ * @Mail : dayucode@foxmail.com
  * @Create : 2019/4/9 10:11 星期二
  * @Description :
  */

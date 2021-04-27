@@ -33,8 +33,8 @@ import java.io.IOException;
 import java.util.UUID;
 
 /**
- * @Author :  涂元坤
- * @Mail : 766564616@qq.com
+ * @Author :  daYu
+ * @Mail : dayucode@foxmail.com
  * @Create : 2019/2/25 18:45 星期一
  * @Description :
  */
@@ -114,7 +114,6 @@ public class WechatController {
         String redirectUrl = wxMpService.oauth2buildAuthorizationUrl(url, WxConsts.OAuth2Scope.SNSAPI_USERINFO, "");
         response.sendRedirect(redirectUrl);
     }
-
     @ApiIgnore
     @GetMapping("/login")
     public void login(@RequestParam("code") String code,
@@ -146,20 +145,18 @@ public class WechatController {
         cookie.setDomain(domain);
         cookie.setPath("/");
         response.addCookie(cookie);
-
-        // 检查信息是否完善，未完善则先去完善信息
+         //检查信息是否完善，未完善则先去完善信息
         if (user.getHeight() == null) {//信息尚未完善,则身高为空
             response.sendRedirect(perfectUrl + "&token=" + token);
         }
 
         response.sendRedirect(returnUrl + "?token=" + token);
     }
-
     @ApiOperation("【模拟登录】测试时使用接口登录")
     @GetMapping("/test")
     @ResponseBody
     public ResultVO test(HttpServletResponse response) {
-        String openid = "oYnw56OEcTV8oekci1lk-ss-YvoQ";
+        String openid = "oZJ925l-GVU6PwMegOA2tY3SBqYc";
         String token = UUID.randomUUID().toString();
         //设置Redis
         redisOperator.set(String.format(RedisConstant.TOKEN_USER, token), openid, RedisConstant.EXPIRE);

@@ -6,8 +6,8 @@ import lombok.Data;
 import javax.validation.constraints.NotBlank;
 
 /**
- * @Author :  涂元坤
- * @Mail : 766564616@qq.com
+ * @Author :  daYu
+ * @Mail : dayucode@foxmail.com
  * @Create : 2019/3/26 20:22 星期二
  * @Description :
  */

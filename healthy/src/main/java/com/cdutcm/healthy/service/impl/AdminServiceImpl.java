@@ -30,8 +30,8 @@ import org.springframework.stereotype.Service;
 import java.util.UUID;
 
 /**
- * @Author :  涂元坤
- * @Mail : 766564616@qq.com
+ * @Author :  daYu
+ * @Mail : dayucode@foxmail.com
  * @Create : 2019/2/26 20:53 星期二
  * @Description :
  */
@@ -59,12 +59,12 @@ public class AdminServiceImpl implements AdminService {
             log.error("【新增管理员】用户未关注公众号或未绑定手机，adminForm = {}", adminForm);
             throw new HealthyException(ResultEnum.ADMIN_NOT_BIND);
         }
-
         //检查用户名或手机号是否重复
         LambdaQueryWrapper<Admin> queryWrapper = new LambdaQueryWrapper<Admin>()
                 .eq(Admin::getUsername, adminForm.getUsername())
                 .or()
                 .eq(Admin::getAdminPhone, adminForm.getAdminPhone());
+        Admin admin1 = adminDao.selectOne(queryWrapper);
         if (adminDao.selectOne(queryWrapper) != null) {
             log.error("【新增管理员】管理员已经存在（用户名或手机号注册），adminForm = {}", adminForm);
             throw new HealthyException(ResultEnum.ADMIN_IS_EXIST);
